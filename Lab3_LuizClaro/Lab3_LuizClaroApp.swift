@@ -9,9 +9,23 @@ import SwiftUI
 
 @main
 struct Lab3_LuizClaroApp: App {
+    @State private var showLaunchScreen: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                VStack {
+                    if showLaunchScreen {
+                        LaunchView(showLaunch: $showLaunchScreen)
+                            .navigationBarHidden(true)
+                            .transition(.move(edge: .leading))
+                    } else {
+                        MainView()
+                            .navigationBarHidden(true)
+                    }
+                }
+            }
+            .preferredColorScheme(.light)
         }
     }
 }
