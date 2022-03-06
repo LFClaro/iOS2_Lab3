@@ -13,7 +13,46 @@ struct MainView: View {
     var body: some View {
         ZStack{
             Image("bg").resizable().edgesIgnoringSafeArea(.all)
-            VStack{
+            
+            ScrollView{
+                HStack(alignment: .bottom){
+                    Text("WALK GROUPS")
+                        .font(Font.title2.weight(.medium))
+                    Spacer()
+                    Text("See all")
+                        .font(Font.title3.weight(.medium))
+                }
+                .padding(EdgeInsets(top: 0, leading: sf.w * 0.03, bottom: 0, trailing: sf.w * 0.03))
+                
+                ScrollView(.horizontal){
+                    HStack(spacing: sf.w * 0.02){
+                        Image("walkCardOne")
+                        Image("walkCardTwo")
+                        Image("walkCardOne")
+                        Image("walkCardTwo")
+                    }
+                }
+                HStack(alignment: .bottom){
+                    Text("PRODUCTS")
+                        .font(Font.title2.weight(.medium))
+                    Spacer()
+                    Text("See all")
+                        .font(Font.title3.weight(.medium))
+                }
+                .padding(EdgeInsets(top: 0, leading: sf.w * 0.03, bottom: 0, trailing: sf.w * 0.03))
+                
+                ScrollView(.horizontal){
+                    HStack(spacing: sf.w * -0.09){
+                        Image("productCardOne")
+                        Image("productCardTwo")
+                        Image("productCardOne")
+                        Image("productCardTwo")
+                    }
+                }
+            }
+            .position(x: sf.w * 0.5, y: sf.h * 0.68)
+            
+            Group{
                 VStack(alignment: .leading){
                     Text("Hi, Luiz!")
                         .font(Font.largeTitle.weight(.heavy))
@@ -28,23 +67,7 @@ struct MainView: View {
                 .padding(EdgeInsets(top: sf.h * 0.05, leading: sf.w * 0.1, bottom: sf.h * 0.01, trailing: sf.w * 0.1))
                 .background(Color("bgColor"))
                 .edgesIgnoringSafeArea(.top)
-                
-                
-                HStack(alignment: .bottom){
-                    Text("WALK GROUPS")
-                        .font(Font.title2.weight(.medium))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("See all")
-                        .font(Font.title3.weight(.medium))
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                }
-                .padding(EdgeInsets(top: 0, leading: sf.w * 0.03, bottom: 0, trailing: sf.w * 0.03))
-                .position(x: sf.w * 0.5, y: sf.h * -0.02)
-                
-                
-                Spacer()
-            }
-            .frame(width: sf.w)
+            }.frame(maxHeight: .infinity, alignment: .top)
         }
         .foregroundColor(Color("foregroundColor"))
     }
