@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "scale" : "1x",
+      "filename" : "productCardTwo.png",
       "idiom" : "universal",
-      "filename" : "productCardTwo.png"
+      "scale" : "1x"
     },
     {
+      "filename" : "productCardTwo@2x.png",
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "productCardTwo@2x.png"
+      "scale" : "2x"
     },
     {
-      "idiom" : "universal",
       "filename" : "productCardTwo@3x.png",
+      "idiom" : "universal",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

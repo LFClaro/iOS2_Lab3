@@ -1,23 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "animalsInAdoption.png",
       "idiom" : "universal",
-      "filename" : "mainText.png",
       "scale" : "1x"
     },
     {
+      "filename" : "animalsInAdoption@2x.png",
       "idiom" : "universal",
-      "filename" : "mainText@2x.png",
       "scale" : "2x"
     },
     {
+      "filename" : "animalsInAdoption@3x.png",
       "idiom" : "universal",
-      "filename" : "mainText@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

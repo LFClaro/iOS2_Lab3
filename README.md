@@ -1,6 +1,9 @@
 # Lab 3
 ## iOS App Dev 2
+
 <hr />
-### Student: Luiz Claro
-### ID: N01459385
+
+Student: Luiz Claro
+<br />
+ID: N01459385
 
